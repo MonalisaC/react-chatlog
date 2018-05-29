@@ -8,12 +8,13 @@ class Bubble extends React.Component {
     const sender = this.props.sender;
     const body = this.props.body;
     const timeStamp = this.props.timeStamp;
+
     return (
-      <div>
-      <p>{sender}</p>
-      <div>
-      <p>{body}</p>
-      <Timestamp time={timeStamp}/>
+      <div className="chat-entry local">
+      <p className="entry-name">{sender}</p>
+      <div className="entry-bubble">
+      <p className="entry-body">{body}</p>
+      <Timestamp className="entry-time" time={timeStamp}/>
       </div>
       </div>
     );
